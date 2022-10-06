@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onOpenInGoogleMaps"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/originalImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="OnSetAvatarButton"
+        app:layout_constraintBottom_toTopOf="@+id/teamName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flower1"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/flower1" />
+
+    <TextView
+        android:id="@+id/SportManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport Manager"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/teamName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/originalImage" />
+
+    <EditText
+        android:id="@+id/teamName"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/please_enter_a_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Team Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <EditText
+        android:id="@+id/ZipCode"
+        android:layout_width="296dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="@string/please_enter_team_Zip_Code"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/teamAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ZipCode"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/OpenInGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onOpenInGoogleMaps"
+        android:text="Open In Google Maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

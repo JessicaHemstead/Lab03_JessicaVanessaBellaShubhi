@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProfileManagerLab3</string>
+    <string name="name">Name</string>
+    <string name="please_enter_a_name">Please enter a name</string>
+    <string name="name1">name:</string>
+    <string name="please_enter_team_adress" />
+    <string name="please_enter_team_address" />
+    <string name="please_enter_team_Zip_Code">please enter team Zip Code</string>
+    <string name="load_from_phone">Load from Phone</string>
+    <string name="todo">TODO</string>
+</resources>
